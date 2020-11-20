@@ -231,7 +231,7 @@ public class Game extends Canvas implements Runnable {
                     if ((enemies1.size()+enemies2.size()+fbs.size()) >= maxEnemies-4) {
                         total = Math.max(0,maxEnemies-(enemies1.size()+enemies2.size()+fbs.size()));
                     }
-                    int amountOf1 = (int) (Math.random()*(total-2));
+                    int amountOf1 = (int) (Math.random()*(total));
                     int amountOf2 = total-amountOf1;
                     for (int i = 0; i < amountOf1; i++) {
                         enemies1.add(new En1((int) (Math.random()*100),(int) (Math.random()*100),this));
