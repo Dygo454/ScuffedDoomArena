@@ -302,7 +302,6 @@ public class Game extends Canvas implements Runnable {
         for (FireBall en : fbs) {
             en.tick();
         }
-        //player needs to be last
         player.tick();
     }
 
