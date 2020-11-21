@@ -281,7 +281,7 @@ public class Player {
                     }
                     bulletSprites = put(bulletSprites, 1f, 0f, xAng, Physics.raycastGet(transformForward,new Vector2(xPos,yPos)));
                 }
-                if (killCount >= 100) {
+                if (killCount >= 50) {
                     won = true;
                 }
             }
